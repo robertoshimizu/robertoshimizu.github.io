@@ -1,0 +1,17 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cert: <http://www.w3.org/ns/auth/cert#> .
+@prefix rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<> a foaf:PersonalProfileDocument ;
+   foaf:maker <#this> ;
+   foaf:primaryTopic <#this> .
+
+<#this> a foaf:Person ;
+   foaf:name "Roberto Shimizu";
+   cert:key [
+      a cert:RSAPublicKey;
+      rdfs:label "made on 2 of September, 2020 in Sao Paulo";
+      cert:modulus "c140dc31652a6d8e06c51810ca9b8c42654c26bbcab30c56aca9e9ef4e7d1ebef9aa6a247b7837d76b0758a5f3f72347dc144a73c397b78d38bf91ae0d0b7ee93e80e15667855399713a808b8bffdcad1f13bb06719eb9926ded05cd24e3e31900e1540129830b1becfeddc633fc7cf67ba7cc30507a1a0e04c869268c1966a495606c0197f271fdcf048ed9e0646290a6cf719e42eb31e64836e8b67eb9feb7b048536a1c1f955f8f497315754552eb869a5d3da14ed9a6bafe14c66f02db2f8b897b1c8edcc1267afccd5f75ca32798018b06678f6b26178160bcecb24b7627e19194f7cde16c866b77c2a2f82802420efbc497f7cc49b01ca35d420c1ea83"^^xsd:hexBinary;
+      cert:exponent "65537"^^xsd:nonNegativeInteger
+     ] .
